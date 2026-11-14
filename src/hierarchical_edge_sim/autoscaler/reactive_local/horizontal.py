@@ -5,13 +5,9 @@ from __future__ import annotations
 import math
 
 from hierarchical_edge_sim.autoscaler.common.distribute import ReplicaView, replica_mu
+from hierarchical_edge_sim.autoscaler.common.placement import home_cluster_id, rank_servers_for_spawn
 from hierarchical_edge_sim.env.api import Env, SpawnAction, TerminateAction
 from hierarchical_edge_sim.env.config import EPS, MicroserviceSpec, quantize_resource
-
-
-def home_cluster_id(env: Env, ms_id: str) -> str:
-    """App-owning cluster (paper stamp). Local horizontal stays inside this cluster."""
-    return env.get_app_owner_cluster_id(ms_id)
 
 
 def replica_cluster_id(env: Env, replica: ReplicaView) -> str:
@@ -38,20 +34,6 @@ def rank_reclaim_order(
         return (mu, r.q, -r.slack, r.container_id)
 
     return sorted(replicas, key=_key)
-
-
-def rank_servers_for_spawn(env: Env, ms_id: str, cluster_id: str) -> list[str]:
-    """Already-hosting servers first, then by free CPU descending, then id."""
-    ms = env.get_microservice(ms_id)
-    hosting = {env.get_container(cid).server_id for cid in ms.container_ids}
-    servers = list(env.get_cluster(cluster_id).server_ids)
-
-    def key(sid: str) -> tuple[int, float, str]:
-        free_cpu, _ = env.get_server_free(sid)
-        already = 0 if sid in hosting else 1
-        return (already, -free_cpu, sid)
-
-    return sorted(servers, key=key)
 
 
 def n_new_replicas(

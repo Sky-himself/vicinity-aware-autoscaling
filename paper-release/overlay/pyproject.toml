@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hierarchical-edge-sim"
+version = "0.1.0"
+description = "A discrete-window simulator for container autoscaling at the edge"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.12"
+dependencies = ["pyyaml>=6.0"]
+
+[project.urls]
+Repository = "https://github.com/ECTLab/HierarchicalEdgeSim"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+plot = ["matplotlib>=3.8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

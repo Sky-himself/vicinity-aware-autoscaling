@@ -15,7 +15,7 @@ from hierarchical_edge_sim.autoscaler.kubernetes_hpa.formula import (
     apply_scale_up_limit,
     desired_replicas,
 )
-from hierarchical_edge_sim.autoscaler.reactive_local.horizontal import (
+from hierarchical_edge_sim.autoscaler.common.placement import (
     home_cluster_id,
     rank_servers_for_spawn,
 )

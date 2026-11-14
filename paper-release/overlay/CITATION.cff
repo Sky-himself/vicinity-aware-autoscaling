@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use HierarchicalEdgeSim, please cite the accompanying simulator paper."
+type: software
+title: "HierarchicalEdgeSim: A Discrete-Window Simulator for Container Autoscaling at the Edge"
+authors:
+  - family-names: Moradi
+    given-names: Ehsan
+  - family-names: Javadi
+    given-names: Seyyed Ahmad
+repository-code: "https://github.com/ECTLab/HierarchicalEdgeSim"
+version: 0.1.0
