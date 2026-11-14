@@ -1,5 +1,8 @@
 # Maintaining the public simulator release
 
+The initial migration is complete. See `MIGRATION.md` for the public commit,
+backup locations, local configuration changes, and validation evidence.
+
 The private repository remains the development source. `ikt` and the existing
 thesis branches/history are retained. Release tooling lives on
 `codex/public-simulator-release`; merge this branch into the development branch
