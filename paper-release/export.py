@@ -13,7 +13,7 @@ from pathlib import Path, PurePosixPath
 import subprocess
 
 SOURCE = Path(__file__).resolve().parents[1]
-PUBLIC_URL = "git@github.com:ECTLab/HierarchicalEdgeSim.git"
+PUBLIC_URL = "https://github.com/ECTLab/HierarchicalEdgeSim.git"
 
 
 def git(*args: str, cwd: Path | None = None) -> bytes:

@@ -40,6 +40,12 @@ settings, or private commit IDs into public files. The private source commit is
 recorded locally in the public checkout's `.git/paper-export.json`. Public file
 integrity is recorded in `release-files.sha256`.
 
+The public remote uses HTTPS, which works with the existing Windows Git
+Credential Manager. This machine's WSL checkout can use that manager via a
+repository-local credential helper; no private remote URL needs changing.
+The private checkout's `ectlab` push URL is disabled after migration to prevent
+accidentally republishing thesis history. Its ECTLab fetch URL remains available.
+
 Subsequent exports require a clean, managed public checkout. They replace the
 approved files and remove obsolete tracked files. Generated, ignored results
 are retained. Maintain source changes and public overlays here; direct edits to
