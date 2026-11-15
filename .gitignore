@@ -8,6 +8,8 @@ dist/
 build/
 results/**
 !results/README.md
+!results/reference/
+!results/reference/**
 .venv/
 .mplconfig/
 proposed_method_complete*.tex

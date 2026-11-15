@@ -3,14 +3,18 @@ requires = ["setuptools>=75.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "hierarchical-edge-sim"
+name = "vicinity-aware-autoscaling"
 version = "0.1.0"
-description = "Hierarchical edge autoscaling simulator — Part A environment"
+description = "Thesis research on vicinity-aware proactive autoscaling for containerized edge clusters"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.12"
 dependencies = [
     "pyyaml>=6.0",
 ]
+
+[project.urls]
+Repository = "https://github.com/Sky-himself/vicinity-aware-autoscaling"
+Simulator = "https://github.com/ECTLab/HierarchicalEdgeSim"
 
 [project.optional-dependencies]
 dev = [

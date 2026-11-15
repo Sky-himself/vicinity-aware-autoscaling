@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Research artifact under preparation; final thesis/paper citation will be added when publicly available."
+type: software
+title: "Vicinity-Aware Proactive Autoscaling"
+authors:
+  - family-names: Moradi
+    given-names: Ehsan
+  - family-names: Javadi
+    given-names: Seyyed Ahmad
+repository-code: "https://github.com/Sky-himself/vicinity-aware-autoscaling"
+version: 0.1.0
