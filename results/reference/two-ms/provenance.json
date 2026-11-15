@@ -1,13 +1,13 @@
 {
   "research_baseline_commit": "2021f17f0346153f7df31680d2fc92d75597b5fa",
-  "code_revision": "2021f17f0346153f7df31680d2fc92d75597b5fa",
+  "code_revision": "00826806c6edcb9ce00e7f03a36fa7c0e0b79266",
   "python": "3.12.3",
   "campaign": "two-ms",
-  "created_utc": "2026-11-15T09:33:40.898177+00:00",
+  "created_utc": "2026-11-15T09:36:25.466698+00:00",
   "tcn_evaluation": "same-trace fit/replay; not held-out",
   "runs": {
     "reactive": {
-      "directory": "results/two-ms/reactive/42_20261115T093340Z",
+      "directory": "results/two-ms/reactive/42_20261115T093625Z",
       "horizon": 721,
       "seed": 42,
       "inputs_sha256": {
@@ -40,7 +40,7 @@
       }
     },
     "persistence": {
-      "directory": "results/two-ms/persistence/42_20261115T093341Z",
+      "directory": "results/two-ms/persistence/42_20261115T093626Z",
       "horizon": 721,
       "seed": 42,
       "inputs_sha256": {
@@ -155,7 +155,7 @@
       }
     },
     "hpa": {
-      "directory": "results/two-ms/hpa/42_20261115T093342Z",
+      "directory": "results/two-ms/hpa/42_20261115T093627Z",
       "horizon": 721,
       "seed": 42,
       "inputs_sha256": {
@@ -188,7 +188,7 @@
       }
     },
     "proscale": {
-      "directory": "results/two-ms/proscale/42_20261115T093345Z",
+      "directory": "results/two-ms/proscale/42_20261115T093628Z",
       "horizon": 721,
       "seed": 42,
       "inputs_sha256": {
@@ -460,7 +460,7 @@
       }
     },
     "tcn": {
-      "directory": "results/two-ms/tcn/42_20261115T093346Z",
+      "directory": "results/two-ms/tcn/42_20261115T093630Z",
       "horizon": 721,
       "seed": 42,
       "inputs_sha256": {
@@ -627,5 +627,5 @@
     "src/hierarchical_edge_sim/env/validate.py": "dd8871b199ce8ecca9427dc6e0bf4b945d8d91b10d7f1f2452f6eaf0eb1fe4e8",
     "src/hierarchical_edge_sim/env/world.py": "dcd3d0396a53d9777c7388ffea59397fdac4b1371b9a2dc6ae0e1004df78a71a"
   },
-  "elapsed_seconds": 10.069553099994664
+  "elapsed_seconds": 8.995173800001794
 }
