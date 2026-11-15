@@ -15,7 +15,7 @@ remain unchanged. Nothing was pushed to private origin.
 ## Working copies and backups
 
 - Private development repository: `/home/sky/HierarchicalEdgeSim`.
-- Release tooling/refactor branch: `codex/public-simulator-release`.
+- Release tooling/refactor branch: `public-simulator-release`.
 - Public publishing checkout: `/home/sky/HierarchicalEdgeSim-public`.
 - External backup: `/home/sky/HierarchicalEdgeSim-backups/2026-11-15/before-public-migration.bundle`.
 - Audited original refs: `/home/sky/HierarchicalEdgeSim-backups/2026-11-15/ectlab-refs.txt`.

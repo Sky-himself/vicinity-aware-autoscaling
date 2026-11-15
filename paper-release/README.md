@@ -5,8 +5,9 @@ backup locations, local configuration changes, and validation evidence.
 
 The private repository remains the development source. `ikt` and the existing
 thesis branches/history are retained. Release tooling lives on
-`codex/public-simulator-release`; merge this branch into the development branch
-when desired. No export changes either remote or pushes anything.
+`public-simulator-release`. Keep it separate from thesis `main`, whose research
+baseline is `2021f17`; this maintenance branch contains later IKT work.
+No export changes either remote or pushes anything.
 
 `manifest.json` explicitly selects simulator files and tests. It excludes the
 thesis controllers, models, experiments, and internal documentation. Public-only
