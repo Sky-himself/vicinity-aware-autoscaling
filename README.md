@@ -1,7 +1,7 @@
-# Vicinity-Aware Proactive Autoscaling
+# Caling Beyond Home: Proactive Microservice Autoscaling with Neighboring Edge Resources
 
-Research implementation and experimental artifact for **vicinity-aware proactive
-autoscaling for containerized edge clusters**. The project studies how forecast
+Research implementation and experimental artifact for the thesis paper.
+The project studies how forecast
 demand, vertical and horizontal elasticity, and resource sharing among nearby
 clusters affect service quality and resource allocation.
 
@@ -12,8 +12,8 @@ The curated simulator-only release is maintained in
 has its own IKT paper. The simulator is one supporting contribution; this
 repository presents the broader autoscaling research.
 
-**Status:** private research artifact under preparation. The project name is
-provisional. A thesis/paper link, final contribution statements, and numbered
+**Status:** private research artifact under preparation. A thesis/paper link,
+final contribution statements, and numbered
 paper-figure mappings will be added when that manuscript is ready.
 
 ## Research implemented here
