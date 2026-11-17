@@ -1,4 +1,4 @@
-# Caling Beyond Home: Proactive Microservice Autoscaling with Neighboring Edge Resources
+# Scaling Beyond Home: Proactive Microservice Autoscaling with Neighboring Edge Resources
 
 Research implementation and experimental artifact for the thesis paper.
 The project studies how forecast
