@@ -1,18 +1,14 @@
 # Scaling Beyond Home: Proactive Microservice Autoscaling with Neighboring Edge Resources
 
-Research implementation and experimental artifact for the thesis paper.
-The project studies how forecast
-demand, vertical and horizontal elasticity, and resource sharing among nearby
-clusters affect service quality and resource allocation.
+Research code and experiments for proactive autoscaling of containerized microservices in hierarchical edge infrastructure. The project studies how forecasting, vertical and horizontal scaling, and resource sharing among nearby clusters affect service quality and resource allocation.
 
-This repository contains the research controllers and evaluation workflows.
-This repository also includes the simulator snapshot used by the thesis.
+The repository includes the research controllers, evaluation workflows, and the simulator snapshot used in the thesis.
 The curated simulator-only release is maintained in
 [ECTLab/HierarchicalEdgeSim](https://github.com/ECTLab/HierarchicalEdgeSim), which
 has its own IKT paper. The simulator is one supporting contribution; this
 repository presents the broader autoscaling research.
 
-**Status:** private research artifact under preparation. A thesis/paper link,
+**Status:** public research artifact. A thesis/paper link,
 final contribution statements, and numbered
 paper-figure mappings will be added when that manuscript is ready.
 
@@ -144,6 +140,4 @@ the autoscaling method, and the separate HierarchicalEdgeSim paper when using
 or discussing the simulation platform. Neither citation substitutes for the
 other.
 
-Dataset attribution is in [traces/README.md](traces/README.md). The public ECTLab
-simulator release has an MIT license. Licensing of this private research artifact
-will be settled before a public release.
+Dataset attribution is in [traces/README.md](traces/README.md). The separate ECTLab simulator release has an MIT license. This research repository does not currently include a license file.
